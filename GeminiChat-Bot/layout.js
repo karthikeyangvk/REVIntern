@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-// Load fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -12,13 +11,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Metadata (unchanged)
 export const metadata = {
   title: "Gemini Chatbot",
   description: "An interactive chatbot built with Next.js and Gemini API",
 };
 
-// Layout Component
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
